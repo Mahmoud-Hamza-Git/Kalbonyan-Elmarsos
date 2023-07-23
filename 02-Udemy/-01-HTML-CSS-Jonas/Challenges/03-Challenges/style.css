@@ -1,0 +1,74 @@
+* {
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+article {
+  border: 4px solid #000;
+  width: 825px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.article-title {
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  background-color: #f7f7f7;
+  padding: 15px;
+}
+
+/* Product Information */
+.price {
+  font-size: 22px;
+}
+.small-label {
+  color: gray;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.product-description {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+
+/* Product Details */
+.details-title {
+  font-size: 15px;
+  text-transform: uppercase;
+  margin: 15px 0;
+}
+.details-list {
+  list-style: square;
+  margin-left: 20px;
+}
+.details-list li {
+  margin-bottom: 10px;
+}
+
+/* Button */
+button {
+  background-color: #000;
+  color: #fff;
+  border-top: 4px solid black;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+}
+button:hover {
+  background-color: #fff;
+  color: #000;
+}

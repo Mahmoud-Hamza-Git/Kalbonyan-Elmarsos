@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel Component</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+
+      /*
+      MAIN COLOR #087f5b 
+      GREY COLOR #343A40
+      */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        color: #343a40;
+        line-height: 1;
+      }
+
+      /* STYLE MAIN CONTAINER */
+      .pagination {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 200px;
+      }
+
+      /* STYLE NAVIGATORS */
+      .navigator {
+        width: 32px;
+        height: 32px;
+        /* padding: 8px 12px; */
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* don't use a:link to select them but use the className:link if you have multiple ancher elements and you need to style some of them different*/
+      a:link,
+      a:visited {
+        text-decoration: none;
+        color: #000;
+      }
+      a:hover,
+      a:active,
+      a.active {
+        /*AND selector --> selects elements that has both the first class AND the second class --> this will increase the priority to (0,1,1) as we select with both element and class*/
+        background-color: #087f5b;
+        color: #fff;
+      }
+
+      /* STYLE BUTTONS */
+      .btn {
+        width: 48px; /*width and height properties will work with flex items but not with inline items*/
+        height: 48px;
+        border: 2px solid #087f5b;
+        border-radius: 50%;
+        background-color: #fff;
+        color: #087f5b;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        background-color: #087f5b;
+      }
+      /*very nice trick as the element that has the class icon and you hover over its parent which have class btn, it's stroke property will change*/
+      .btn:hover .icon {
+        stroke: #fff;
+      }
+      .icon {
+        width: 24px;
+        height: 24px;
+      }
+
+      /* remove it to acheive DRY principle */
+      /* .btn:hover,      
+      .btn:active {
+        background-color: #087f5b;
+        color: #fff;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="pagination">
+      <!-- notice that buttons doesn't work as a link so use an anchor element instead if you want one -->
+      <button href="https://www.google.com" class="btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+      <a href="#" class="navigator">1</a>
+      <a href="#" class="navigator">2</a>
+      <a href="#" class="navigator active">3</a>
+      <a href="#" class="navigator">4</a>
+      <a href="#" class="navigator">5</a>
+      <a href="#" class="navigator">6</a>
+      <span class="dots">...</span>
+      <a href="#" class="navigator">23</a>
+      <button href="#" class="btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>

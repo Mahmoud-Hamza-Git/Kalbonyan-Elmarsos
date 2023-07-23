@@ -1,0 +1,96 @@
+.home-link {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: calc(50% - 20px);
+
+  font-size: 2rem;
+  border: 3px solid black;
+  border-radius: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  color: brown;
+  background-color: pink;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.pagination {
+  width: 800px;
+  height: 80px;
+  font-size: 1.5rem;
+  border: 1px solid darkblue;
+  border-radius: 20px;
+  background-color: ghostwhite;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.drop {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drop:hover {
+  /* border: 2px solid green; */
+  outline: 2px solid green;
+  background-color: green;
+  color: #fff;
+}
+
+.dots {
+  color: green;
+  font-size: 2rem;
+}
+.btn {
+  padding: 10px;
+  border: 1px solid green;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  background-color: aliceblue;
+  color: green;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: green;
+  color: #fff;
+}
+
+.left-btn {
+  width: 24px;
+  height: 24px;
+}
+
+.right-btn {
+  width: 24px;
+  height: 24px;
+}
+
+/* .pagination .drop:nth-child(1) {
+  background-color: green;
+} */
+
+.selected-drop {
+  background-color: green;
+  color: #fff;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .el--1 {
+        background-color: blueviolet;
+      }
+      .el--2 {
+        background-color: orangered;
+      }
+      .el--3 {
+        background-color: green;
+        height: 150px;
+        width: 10px;
+      }
+      .el--4 {
+        background-color: goldenrod;
+      }
+      .el--5 {
+        background-color: palevioletred;
+      }
+      .el--6 {
+        background-color: steelblue;
+      }
+      .el--7 {
+        background-color: yellow;
+      }
+      .el--8 {
+        background-color: crimson;
+      }
+
+      .container {
+        /* STARTER */
+        font-family: sans-serif;
+        background-color: #ddd;
+        font-size: 40px;
+        margin: 100px 40px;
+
+        /* FLEXBOX */
+
+        display: flex; /*horizontaly elements take width of it's content but vertically all of them as tall as the tallest element which is 150px for the green element*/
+
+        align-items: center; /*now they only take the height of their content or the heigt specified*/
+        /* align-items: flex-end or flex-start or stretch; */
+
+        justify-content: flex-start; /*align items in the empty space over the main axis*/
+        /* gap: 50px; */
+        flex-wrap: wrap; /*this will wrap the items into a new line if their width exceeds the container's width*/
+        align-content: center; /*this will align the wraped items if the container has a hight greater than the elements's hight*/
+
+        flex-direction: row;
+      }
+      .el {
+        /* DEFAULTS
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto; */
+
+        flex-basis: 100px; /*set the base width for flex items but if flex-shrink is set to 1 they can shrink if the width overflow the container --> but they can't shrink for ever as the content size will stop them and at the end they will overflow the container --> notice also if flex-wrap: wrap; is set they will not even shrink 1px they will wrap directly*/
+
+        flex-grow: 1; /*allows items to grow as large as they can to fill the remaining space if set to 1 */
+        /*--> it also can be set to a single item with different values so one items can take double or trible of available space than others*/
+
+        /* SHORT HAND */
+        flex: 1; /*unitless number --> flex-grow*/
+
+        /* Unit number--> flex-basis */
+        flex: 10em;
+        flex: 30%;
+        flex: min-content;
+
+        flex: 1 30px; /*flex-grow | flex-basis*/
+
+        flex: 2 2; /* flex-grow | flex-shrink */
+
+        flex: 0 2 10%; /*grow  shrink  basis*/
+      }
+
+      .el--1 {
+        align-self: flex-start;
+        /* flex-grow: 3; */
+      }
+      .el--5 {
+        align-self: stretch;
+        order: 1; /*the very first element*/
+      }
+      .el--6 {
+        order: -1; /*the very first element as they are all 0 order*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="el el--1">HTML</div>
+      <div class="el el--2">and</div>
+      <div class="el el--3">CSS</div>
+      <div class="el el--4">are</div>
+      <div class="el el--5">amazing</div>
+      <div class="el el--6">languages</div>
+      <div class="el el--7">to</div>
+      <div class="el el--8">learn</div>
+    </div>
+    <img
+      src="img/flex-box sheat sheet.png"
+      alt="flex-box sheat sheet"
+      width="80%"
+      style="margin: auto; display: block;"
+    />
+  </body>
+</html>

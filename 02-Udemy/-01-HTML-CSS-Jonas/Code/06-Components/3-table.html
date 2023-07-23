@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel Component</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+
+      /*
+      MAIN COLOR #087f5b
+      GREY COLOR #343A40
+      */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        color: #343a40;
+        line-height: 1;
+        background-color: red;
+        display: flex;
+        justify-content: center; /* this is another way to center block element beside margin auto*/
+      }
+      table {
+        width: 800px; /*this width may shrink if needed to reach the narrowest content size or the min-width seted*/
+        min-width: 600px;
+        /* max-width: 800px; if max-width specified without instead of using width property the width doesn't reach the max by default??? */
+        margin-top: 100px;
+        border-collapse: collapse; /*collapse adjacent borders */
+      }
+      td,
+      th {
+        padding: 12px 24px;
+        text-align: left;
+        /* border: 1px solid black; */
+      }
+      /* selects only th in the head */
+      thead th {
+        font-weight: 700;
+        color: #fff;
+        background-color: #087f5b;
+        width: 25%; /*setting the same width for all head cells(all columns --> set colums width through head cells)*/
+
+        /* notice_1 if you specified the % more than 25% for every column the last one will fit the content as they are 4 columns and it can take more than 25% */
+        /* notice_2 if you set % without setting width for the container the size will be corrupted */
+      }
+      /* select only tr in the body */
+      tbody tr:nth-child(even) {
+        background-color: #e9ecef;
+      }
+      tbody tr:nth-child(odd) {
+        background-color: #f8f9fa;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Chair</th>
+          <th>The Laid Back</th>
+          <th>The Worker Bee</th>
+          <th>The Chair 4/2</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th>Width</th>
+          <td>80 cm</td>
+          <td>60 cm</td>
+          <td>220 cm</td>
+        </tr>
+        <tr>
+          <th>Height</th>
+          <td>100 cm</td>
+          <td>110 cm</td>
+          <td>90 cm</td>
+        </tr>
+        <tr>
+          <th>Depth</th>
+          <td>70 cm</td>
+          <td>65 cm</td>
+          <td>80 cm</td>
+        </tr>
+        <tr>
+          <th>Weight</th>
+          <td>16 kg</td>
+          <td>22 kg</td>
+          <td>80 kg</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

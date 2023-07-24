@@ -4,35 +4,35 @@
 
 ## Projects
 
-### Calculator (S6)
+### Guess My Number (S5)
 
-- [Project Code](./Projects/01-Calculator/)
-- [Live Demo]()
+- [Project Code](https://github.com/Mahmoud-Hamza-Git/Frontend-Projects/tree/guessing_game)
+- [Live Demo](https://guessing-game-xnumber.netlify.app/)
 
-### Favorite Movies (S7)
+### Modal Window (S6)
 
-- [Project Code](./Projects/02-Favorite-Movies/)
-- [Live Demo]()
+- [Project Code](https://github.com/Mahmoud-Hamza-Git/Frontend-Projects/tree/modal_window)
+- [Live Demo](https://modal-window-display.netlify.app/)
 
-### Mini Shop (S10)
+### Pig Game (S7)
 
-- [Project Code](./Projects/03-Mini-Shop/)
-- [Live Demo]()
+- [Project Code](https://github.com/Mahmoud-Hamza-Git/Frontend-Projects/tree/dice_game)
+- [Live Demo](https://dice-game-challenge.netlify.app/)
 
-### Project Planner (S14)
+### ATM Dashboard (S11 , S12)
 
-- [Project Code](./Projects/04-Project-Planner/)
-- [Live Demo]()
+- [Project Code](https://github.com/Mahmoud-Hamza-Git/Frontend-Projects/tree/ATM)
+- [Live Demo](https://atm-monitor.netlify.app/)
 
-### Posts (S19)
+### Bankist (S13)
 
-- [Project Code](./Projects/05-Posts/)
-- [Live Demo]()
+- [Project Code](https://github.com/Mahmoud-Hamza-Git/Frontend-Projects/tree/bankist)
+- [Live Demo](https://bankist-app-page.netlify.app/)
 
-### Map (S29)
+### Mapify (S15)
 
-- [Project Code](./Projects/06-Map/)
-- [Live Demo]()
+- [Project Code](https://github.com/Mahmoud-Hamza-Git/Frontend-Projects/tree/mapify)
+- [Live Demo](https://hamza-mapify.netlify.app/)
 
 ---
 
